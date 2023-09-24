@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact List</title>
+    <link rel="icon" href="https://www.code2inspire.com/icons/jsIcon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="intro">
+        <div class="bg-image h-100" style="
+          background-image: url('https://mdbootstrap.com/img/Photos/new-templates/tables/img2.jpg');
+        ">
+            <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.25)">
+                <div class="container">
+                    <form class="d-flex flex-column align-items-center text-white font-weight-bold">
+                        <h1 class="text-center my-4"> Contact List </h1>
+
+                        <div class="form-group col-md-6">
+                            <label>Contact First Name</label>
+                            <input type="text" class="form-control" id="firstName" required />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>Contact Last Name</label>
+                            <input type="text" class="form-control" id="lastName" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Contact Number</label>
+                            <input type="number" class="form-control" id="contactNum" />
+                        </div>
+                        <div>
+                            <button type="button" id="Add" onclick="addData()" class="btn btn-primary">
+                                ADD
+                            </button>
+                            <button type="button" id="Update" class="btn btn-primary">
+                                Update
+                            </button>
+                            <button type="button" onclick="resetForm()" class="btn btn-success">
+                                Reset
+                            </button>
+                        </div>
+                    </form>
+                    <br /><br />
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="card bg-dark shadow-2-strong">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-dark table-borderless mb-0" id="contactList">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">First Name</th>
+                                                    <th scope="col">Last Name</th>
+                                                    <th scope="col">Contact Number</th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<script src="script.js"></script>
+
+</html>
