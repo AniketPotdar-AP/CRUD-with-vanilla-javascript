@@ -135,5 +135,4 @@ function resetForm() {
   document.getElementById("firstName").value = "";
   document.getElementById("lastName").value = "";
   document.getElementById("phoneNumber").value = "";
-  selectedRow = null;
 }
